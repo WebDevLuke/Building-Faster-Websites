@@ -1,0 +1,44 @@
+{% extends "partials/default.html" %}
+{% set path = '/blog' %}
+{% block content %} 	
+	<div class="p-2 box border-bottom">
+		<div class="container d-flex align-items-center">
+			<a href="/">Home</a>
+			<img src="img/circle-arrow.svg" class="icon-tiny mx-2" alt="Arrow in a circle">
+			<a href="/blog">Blog</a>
+			<img src="img/circle-arrow.svg" class="icon-tiny mx-2" alt="Arrow in a circle">
+			<span>Lorum Ipsum</span>
+		</div>
+	</div>
+	<article>
+		<div class="blog-header mb-5">
+			<div class="container text-white position-relative">
+				<h1>Lorum Ipsum</h1>
+				<div class="d-flex align-items-center">
+					<img src="/img/clock-white.svg" alt="An icon of a clock" class="icon-tiny mr-2">
+					<div>9th February 2020</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-10 mb-5">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<img src="/img/dog.gif" alt="Dog on a skateboard" class="float-left mr-3 mb-3 post-image">
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia vehicula lorem et aliquet. Aenean vel mattis eros. Proin a turpis massa. Mauris tempus enim eu risus dapibus placerat.</p>
+					<img src="/img/dog2.gif" alt="Dog wanting food" class="float-right ml-3 mb-3 post-image">
+					<p>Quisque sit amet tempus arcu, sit amet sollicitudin felis. Aenean vel sapien orci. Phasellus a ornare quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel massa a lectus feugiat fermentum. Donec at lacus nec felis pellentesque porta id at felis. In libero justo, elementum vitae laoreet vel, convallis faucibus leo. Sed tincidunt arcu eget volutpat consectetur.</p>
+					<p>Aliquam ac lacus malesuada, ultricies est sed, imperdiet libero. Nunc eu iaculis ipsum. Etiam et mollis massa. Ut quis congue sem, nec consectetur orci. Duis rhoncus pharetra dignissim. Aliquam scelerisque nulla non gravida cursus. Quisque viverra consequat lacus, sed dapibus tellus. Phasellus auctor diam in massa scelerisque fringilla sed sed enim.</p>
+					<img src="/img/dog3.gif" alt="Dog rejecting food" class="float-left mr-3 mb-3 post-image">
+					<p>Pellentesque at nisl nec est sagittis commodo. Nullam maximus volutpat magna, et eleifend nulla commodo eu. Cras faucibus quam vel sem venenatis, vel fringilla sem finibus. Ut at neque diam. Nam leo arcu, elementum quis sodales eu, vulputate facilisis erat.Mauris tempus est ac lacus laoreet mattis. Donec aliquet enim leo, sed vestibulum enim mattis ut. Sed dapibus lectus in facilisis varius. Nam nec nunc porta, fringilla turpis in, tristique quam. In lectus nunc, aliquet in gravida euismod, gravida vel leo. Donec semper ut massa ac accumsan. Morbi vulputate dapibus arcu at egestas. Sed vehicula pulvinar leo, ut fermentum metus consequat porttitor. Praesent in varius massa. Morbi ultricies, dui a vulputate mollis, felis dui lobortis leo, non aliquet magna sapien placerat eros. Nullam faucibus lectus vel convallis aliquet.</p>
+					<p>Turpis in, tristique quam. In lectus nunc, aliquet in gravida euismod, gravida vel leo. Donec semper ut massa ac accumsan. Morbi vulputate dapibus arcu at egestas. Sed vehicula pulvinar leo, ut fermentum metus consequat porttitor. Praesent in varius massa. Morbi ultricies, dui a vulputate mollis, felis dui lobortis leo, non aliquet magna sapien placerat eros. Nullam faucibus lectus vel convallis aliquet.</p>
+					<p class="mb-5">Quisque sit amet tempus arcu, sit amet sollicitudin felis. Aenean vel sapien orci. Phasellus a ornare quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel massa a lectus feugiat fermentum. Donec at lacus nec felis pellentesque porta id at felis. In libero justo, elementum vitae laoreet vel, convallis faucibus leo. Sed tincidunt arcu eget volutpat consectetur.</p>
+					<p class="text-center">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/MtN1YnoL46Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</p>
+				</div>
+			</div>
+		</div>
+	</article>
+{% endblock %}

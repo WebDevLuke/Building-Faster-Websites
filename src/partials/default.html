@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% include "partials/head.html" %}
+		{% block head %}{% endblock %}
+	</head>
+	<body>
+		{% include "partials/header.html" %}
+		<main>
+			{% block content %}{% endblock %}
+		</main>
+		{% include "partials/footer.html" %}
+		<script src="global.js"></script>
+	</body>
+</html>

@@ -1,0 +1,72 @@
+{% extends "partials/default.html" %}
+{% set path = '/products' %}
+{% block content %} 	
+	<div class="p-2 box border-bottom mb-5">
+		<div class="container d-flex align-items-center">
+			<a href="/">Home</a>
+			<img src="img/circle-arrow.svg" class="icon-tiny mx-2" alt="Arrow in a circle">
+			<span>Products</span>
+		</div>
+	</div>
+	<div class="container">
+		<h1 class="mb-5">Our Renewable Technology Leads the way...</h1>
+		<div class="box border p-3 mb-5">
+			<div class="row d-flex flex-md-nowrap align-items-end">
+				<div class="col-12 col-sm-6 col-md flex-md-fill mb-4 mb-md-0">
+					<div class="form-group mb-0">
+					   <label for="make">Keyword</label>
+					   <input type="text" class="form-control" id="make">
+					 </div>
+				</div>
+				<div class="col-12 col-sm-6 col-md flex-md-fill mb-4 mb-md-0">
+					<div class="form-group mb-0">
+						<label for="type">Type</label>
+						<select class="form-control" id="type">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md flex-md-fill mb-4 mb-md-0">
+					<div class="form-group mb-0">
+					   <label for="kva-min">KVa Min</label>
+					   <input type="text" class="form-control" id="kva-min">
+					 </div>
+				</div>
+				<div class="col-12 col-sm-6 col-md flex-md-fill mb-4 mb-md-0">
+					<div class="form-group mb-0">
+					   <label for="kva-max">KVa Max</label>
+					   <input type="text" class="form-control" id="kva-max">
+					 </div>
+				</div>
+
+				<div class="col-12 col-md flex-md-shrink text-center">
+					<button type="button" class="btn btn-mle-red">Search</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="row justify-content-center">
+
+			{% for i in range(1, 30) -%}
+				<div class="col-sm-7 col-md-4 col-lg-3 mb-3 mb-md-5">
+					<img src="/img/product-images/{{i}}.jpg" alt="product image {{i}}" class="w-100">
+				</div>
+				<div class="col-md-8 col-lg-7 mb-5">
+					<h3>MLE - Generic Product</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis quam quis ex maximus pharetra non nec eros. Aliquam erat volutpat. In vel tellus quis ex feugiat rutrum.</p>
+					<button class="btn btn-outline-dark mr-sm-2 btn-sm-block mb-3 mb-sm-0">
+						More Details
+					</button>
+					<button class="btn btn-mle-red btn-sm-block">
+						Buy Now
+						<img src="img/circle-arrow-white.svg" class="icon-tiny ml-1" alt="Arrow in a circle">
+					</button>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+{% endblock %}

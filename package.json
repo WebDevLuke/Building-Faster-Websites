@@ -1,0 +1,27 @@
+{
+  "name": "building-faster-websites",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebDevLuke/Building-Faster-Websites.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebDevLuke/Building-Faster-Websites/issues"
+  },
+  "homepage": "https://github.com/WebDevLuke/Building-Faster-Websites#readme",
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "glob": "^7.1.6",
+    "gulp": "^4.0.2",
+    "gulp-nunjucks": "^5.0.1",
+    "rimraf": "^3.0.0"
+  },
+  "dependencies": {}
+}

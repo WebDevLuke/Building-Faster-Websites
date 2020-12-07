@@ -1,0 +1,51 @@
+<header class="header">
+	<div class="container">
+		<div class="row py-4 align-items-center">
+			<div class="col flex-grow-1">
+				<a href="/"><img src="img/logo.svg" alt="Logo" class="icon-logo"></a>
+			</div>
+			<div class="col-sm flex-shrink-1 flex-grow-0 header__contact d-none d-md-block">
+				<div class="row">
+					<div class="col-sm border-right border-mle-grey pr-0">
+						<strong class="text-mle-red">Sales</strong><br>
+						<a href="tel:+441632960420" class="text-black">+44(0)163 296 0420</a>
+					</div>
+					<div class="col-sm pl-4">
+						<strong class="text-mle-red">24hr Service &amp; Repair</strong><br>
+						<a href="tel:+441632960563" class="text-black">+44(0)163 296 0563</a>
+					</div>
+				</div>
+			</div>
+			<div class="col d-md-none text-right">
+				<button class="hamburger">
+					Menu
+					<img class="hamburger__icon" src="img/hamburger.svg" alt="hamburger icon">
+					<img class="hamburger__icon hamburger__icon--close" src="img/close.svg" alt="hamburger icon">
+				</button>
+			</div>
+		</div>	
+	</div>
+	<nav class="header__nav is-active">
+		<div class="container header__container">
+			<div class="row mx-0">
+				<a href="/" class="col-md py-3 px-5 flex-grow-0 header__nav-item {% if not path %}is-active{% else %}mb-3 mb-md-0{% endif %}">HOME</a>
+				<a href="/products" class="col-md py-3 px-5 flex-grow-0 header__nav-item {% if path == '/products' %}is-active{% else %}mb-3 mb-md-0{% endif %}">PRODUCTS</a>
+				<a href="/blog" class="col-md py-3 px-5 flex-grow-0 header__nav-item {% if path == '/blog' %}is-active border-right{% else %}mb-3 mb-md-0{% endif %}">BLOG</a>
+
+				<div class="col py-3 header__contact d-md-none">
+					<div class="row">
+						<div class="col-sm pr-0 mb-2">
+							<strong class="text-mle-red">Sales</strong><br>
+							+44(0)163 296 0420
+						</div>
+						<div class="col-sm pl-4">
+							<strong class="text-mle-red">24hr Service &amp; Repair</strong><br>
+							+44(0)163 296 0563
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</nav>
+</header>
