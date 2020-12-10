@@ -1,2 +1,2 @@
-# Building faster websites: getting started with web performance
-Source files. See course for details.
+# Building Faster Websites: Getting Started with Web Performance
+Source code for Web Performance Udemy Course. For more details, visit [lh.fyi/course](lh.fyi/course)
